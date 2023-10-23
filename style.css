@@ -1,9 +1,9 @@
 /* Allgemeine Formatierung */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* Hellgrau */
+    background-color: #f0f0f0; /* Hellgrau */
 }
 
 .container {
@@ -14,14 +14,14 @@ body {
 
 /* Header */
 header {
-    background-color: #007BFF; /* Dunkelblau */
-    color: white;
+    background-color: #333; /* Dunkelgrau */
+    color: #00ccff; /* Cyan-Blau */
     text-align: center;
     padding: 20px 0;
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 32px;
     text-decoration: underline;
 }
 
@@ -36,15 +36,15 @@ section {
 
 /* Überschriften und Trennlinien */
 h2 {
-    font-size: 24px;
-    border-bottom: 2px solid #007BFF; /* Dunkelblau */
+    font-size: 28px;
+    border-bottom: 2px solid #00ccff; /* Cyan-Blau */
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 hr {
     border: none;
-    border-top: 2px solid #007BFF; /* Dunkelblau */
+    border-top: 2px solid #00ccff; /* Cyan-Blau */
     margin: 10px 0;
 }
 
@@ -59,7 +59,7 @@ ul li {
 
 /* Links */
 a {
-    color: #007BFF; /* Dunkelblau */
+    color: #00ccff; /* Cyan-Blau */
     text-decoration: none;
 }
 
