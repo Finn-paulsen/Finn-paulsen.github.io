@@ -1,3 +1,43 @@
+document.getElementById("github-link").href = githubLink;
+document.getElementById("discord-link").href = discordLink;
+document.getElementById("instagram-link").href = instagramLink;
+document.getElementById("email-link").href = `mailto:${yourEmail}`;
+
+const terminalInput = document.getElementById("terminal-input");
+const terminalOutput = document.getElementById("terminal-output");
+
+terminalInput.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        const command = terminalInput.value;
+        terminalInput.value = "";
+
+        if (command === "help") {
+            terminalOutput.innerText = "whoami : General information\n" +
+                "experience : Technical Experience\n" +
+                "education : Educational background\n" +
+                "skills : Current SWE skills\n" +
+                "publications : Papers published on international Journals\n" +
+                "blogs : Contributing programming tutorials for learners\n" +
+                "github : Where I put my codes :P\n" +
+                "linkedin : LinkedIn handle of mine.\n" +
+                "contact : Email for anything\n" +
+                "clear : clears everything from the terminal";
+        } else if (command === "whoami") {
+            terminalOutput.innerText = "Name: Finn Paulsen\nAge: 15 Jahre\nLocation: Norderstedt\nEmail: finnpaulsen10@web.de";
+        } else if (command === "experience") {
+            terminalOutput.innerText = "During my time at DMK IT Solutions, I gained valuable experience in HTML, CSS, and JavaScript. I also learned how to effectively use Vue.js and the Pinia Store. Additionally, I successfully installed and used Node.js and NPM. During a voluntary stay, I acquired knowledge in project deployment on Netlify and deepened my skills in dealing with GitHub.";
+        } // Füge hier die anderen Befehle hinzu
+
+        // Für den Befehl "clear", leere das Terminal.
+        else if (command === "clear") {
+            terminalOutput.innerText = "";
+        } else {
+            terminalOutput.innerText = "Befehl nicht gefunden. Gib 'help' ein, um eine Liste der verfügbaren Befehle anzuzeigen.";
+        }
+    }
+});
+
+
 function n0(e,t){for(var n=0;n<t.length;n++){const r=t[n];if(typeof r!="string"&&!Array.isArray(r)){for(const o in r)if(o!=="default"&&!(o in e)){const i=Object.getOwnPropertyDescriptor(r,o);i&&Object.defineProperty(e,o,i.get?i:{enumerable:!0,get:()=>r[o]})}}}return Object.freeze(Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}))}(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))r(o);new MutationObserver(o=>{for(const i of o)if(i.type==="childList")for(const l of i.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&r(l)}).observe(document,{childList:!0,subtree:!0});function n(o){const i={};return o.integrity&&(i.integrity=o.integrity),o.referrerPolicy&&(i.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?i.credentials="include":o.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function r(o){if(o.ep)return;o.ep=!0;const i=n(o);fetch(o.href,i)}})();function Sf(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function r0(e){if(e.__esModule)return e;var t=e.default;if(typeof t=="function"){var n=function r(){return this instanceof r?Reflect.construct(t,arguments,this.constructor):t.apply(this,arguments)};n.prototype=t.prototype}else n={};return Object.defineProperty(n,"__esModule",{value:!0}),Object.keys(e).forEach(function(r){var o=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(n,r,o.get?o:{enumerable:!0,get:function(){return e[r]}})}),n}var kf={exports:{}},cl={},Cf={exports:{}},K={};/**
  * @license React
  * react.production.min.js
