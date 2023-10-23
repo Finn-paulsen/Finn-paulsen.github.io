@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7; /* Hellgrau */
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #007BFF;
+    background-color: #007BFF; /* Dunkelblau */
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -37,14 +37,14 @@ section {
 /* Überschriften und Trennlinien */
 h2 {
     font-size: 24px;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid #007BFF; /* Dunkelblau */
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 hr {
     border: none;
-    border-top: 2px solid #007BFF;
+    border-top: 2px solid #007BFF; /* Dunkelblau */
     margin: 10px 0;
 }
 
@@ -59,7 +59,7 @@ ul li {
 
 /* Links */
 a {
-    color: #007BFF;
+    color: #007BFF; /* Dunkelblau */
     text-decoration: none;
 }
 
